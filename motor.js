@@ -78,7 +78,7 @@ function test_api(v1){
                 var div5 = document.createElement('div');
                 div5.setAttribute('class','progress progress-xs m-2');
                 var div6 = document.createElement('div');
-                div6.setAttribute('class','progress-bar progress-bar-danger');
+                div6.setAttribute('class','progress-bar bg-primary');
                 div6.setAttribute('style','width: '+intelligence+'%');
 
                 // Strength
@@ -101,7 +101,15 @@ function test_api(v1){
                 div12.setAttribute('class','progress-bar bg-success');
                 div12.setAttribute('style','width: '+speed+'%');
 
-
+                // Durability
+                var div13 = document.createElement('div');
+                div13.innerHTML = "Durability";
+                div13.setAttribute('class','p-1');
+                var div14 = document.createElement('div');
+                div14.setAttribute('class','progress progress-xs m-2');
+                var div15 = document.createElement('div');
+                div15.setAttribute('class','progress-bar bg-danger');
+                div15.setAttribute('style','width: '+durability+'%');
 
 
                 divc2.appendChild(div1);
@@ -115,6 +123,8 @@ function test_api(v1){
                 div2.appendChild(div8);
                 div2.appendChild(div10);
                 div2.appendChild(div11);
+                div2.appendChild(div13);
+                div2.appendChild(div14);
 
                 div3.appendChild(h5);
                 div3.appendChild(p1);
@@ -124,6 +134,7 @@ function test_api(v1){
                 div5.appendChild(div6);
                 div8.appendChild(div9);
                 div11.appendChild(div12);
+                div14.appendChild(div15);
 
 
               });
