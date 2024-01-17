@@ -47,9 +47,9 @@ function test_api(v1){
                 // Crear Elementos de Card
                 var div1 = document.createElement('div');
                 var div2 = document.createElement('div');
-                div1.setAttribute('class','col-3 p-1');
+                div1.setAttribute('class','col-2 p-1');
                 div2.setAttribute('class','card');
-                div2.setAttribute('style','width: 18rem;');
+                //div2.setAttribute('style','width: 18rem;');
                 var img1 = document.createElement('img');
                 img1.setAttribute("src",h.image.url);
                 img1.setAttribute("class","card-img-top");
